@@ -70,8 +70,8 @@ window.onload = function () {
         },
         computed: {
             html: function () {
-                return converter.makeHtml(this.markdown);;
-            },
+                return converter.makeHtml(this.markdown);
+            }
         },
         methods: {
             addElement: function (code, range) {
