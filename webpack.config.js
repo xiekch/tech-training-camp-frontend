@@ -8,7 +8,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Output Management',
-            template: './src/html/index.html'
+            template: './src/index.html'
         }),
     ],
     output: {
@@ -22,6 +22,15 @@ module.exports = {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
+            {
+                test: /\.(png|svg|jpg|gif|jpeg)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'img/[name].[ext]',
+                    }
+                }
+            }
         ],
     },
     mode: 'production'

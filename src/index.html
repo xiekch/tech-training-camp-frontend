@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.jpeg" />
+    <title>Markdown Notepad</title>
+</head>
+
+<body>
+    <div id="title"></div>
+    <div id="app">
+        <div id="nav">
+            <ul>
+                <li v-for="item in nav"><button :title="item.title" v-on:click="addElement(item.code, item.selected)">{{item.text}}</button></li>
+            </ul>
+        </div>
+        <div id="main">
+            <textarea id="markdown-text" v-model="markdown" placeholder="input your markdown text"></textarea>
+            <div id="html-output">
+                <span id="hint" v-show="!markdown">Here will display the markdown preview</span>
+                <div v-html="html"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

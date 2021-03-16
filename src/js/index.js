@@ -1,6 +1,7 @@
 import Vue from 'vue/dist/vue.common';
-import '../css/index.css';
 import showdown from 'showdown';
+import '../css/index.css';
+import '../img/icon.jpeg';
 
 window.onload = function () {
     'use strict';
