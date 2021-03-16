@@ -12,14 +12,34 @@ html, body {
     min-height: 100%;
 }
 
-#banner {
-    height: 100px;
+#nav {
+    height: 60px;
+    background: #bbbbbb55;
 }
 
-#banner ul li {
+#nav ul {
+    margin: 0;
+    height: 100%;
+}
+
+#nav ul li {
     display: inline-block;
     width: 100px;
+    height: 100%;
     text-align: center;
+}
+
+#nav button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 22px;
+}
+
+#nav button:hover {
+    background: #bbbbbbbb;
+    cursor: pointer;
 }
 
 #main {
