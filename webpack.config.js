@@ -19,6 +19,16 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env']  // 也可以写成presets:['babel-preset-env']
+                    }
+                },
+                exclude: /node_modules/
+            },
+            {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
