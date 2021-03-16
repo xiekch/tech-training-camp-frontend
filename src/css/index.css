@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    background: #FDF6E3;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+#banner {
+    height: 100px;
+}
+
+#banner ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+#markdown-text {
+    height: 600px;
+    background: #FDF6E3;
+    flex: 1 1 40%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    resize: none;
+}
+
+#html-output {
+    height: 600px;
+    flex: 1 1 40%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin: 10px;
+}
