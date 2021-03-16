@@ -1,0 +1,19 @@
+{
+  "name": "markdown-notepad",
+  "version": "1.0.0",
+  "description": "a markdown frontend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiekch/markdown-notepad.git"
+  },
+  "author": "xiekch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiekch/markdown-notepad/issues"
+  },
+  "homepage": "https://github.com/xiekch/markdown-notepad#readme"
+}
