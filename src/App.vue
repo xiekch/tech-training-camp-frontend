@@ -126,6 +126,13 @@ export default {
           selected: [7, 25],
         },
         {
+          title: "Quote",
+          text: "",
+          id: "quote",
+          code: "\n> quote",
+          selected: [3, 8],
+        },
+        {
           title: "Code",
           text: "Code",
           code: "\n```  \ncode \n```",
@@ -258,6 +265,7 @@ header h1 {
   height: 60px;
   padding: 0;
   border: none;
+  outline: none;
   background: none;
   font-size: 20px;
 }
@@ -272,16 +280,21 @@ header h1 {
   height: 16px;
 }
 
-#bold button{
+#bold button {
   font-weight: bold;
 }
 
-#italic button{
+#italic button {
   font-style: italic;
 }
 
-#underline button{
+#underline button {
   text-decoration: underline;
+}
+
+#quote {
+  background: center/contain no-repeat url("./assets/quote.svg");
+  background-size: 20px 20px;
 }
 
 #u-list {
