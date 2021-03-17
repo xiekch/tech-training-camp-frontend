@@ -63,20 +63,23 @@ export default {
         {
           title: "Bold",
           text: "B",
+          id: "bold",
           code: "**Bold**",
           selected: [2, 6],
         },
         {
           title: "Italic",
           text: "I",
+          id: "italic",
           code: "*Italic*",
           selected: [1, 7],
         },
         {
-          title: "UnderLined",
+          title: "underline",
           text: "U",
-          code: "<u>UnderLined</u>",
-          selected: [3, 13],
+          id: "underline",
+          code: "<u>underline</u>",
+          selected: [3, 12],
         },
         {
           title: "Header 1",
@@ -267,6 +270,18 @@ header h1 {
 #nav button img {
   width: 16px;
   height: 16px;
+}
+
+#bold button{
+  font-weight: bold;
+}
+
+#italic button{
+  font-style: italic;
+}
+
+#underline button{
+  text-decoration: underline;
 }
 
 #u-list {
