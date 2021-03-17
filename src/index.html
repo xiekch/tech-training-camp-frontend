@@ -9,11 +9,15 @@
 </head>
 
 <body>
-    <div id="title"></div>
+    <header>
+        <img id="icon" src="./img/icon.jpeg">
+        <h1>Markdown Notepad</h1>
+    </header>
     <div id="app">
         <div id="nav">
             <ul>
-                <li v-for="item in nav"><button :title="item.title" v-on:click="addElement(item.code, item.selected)">{{item.text}}</button></li>
+                <li v-for="item in nav"><button :title="item.title"
+                        v-on:click="addElement(item.code, item.selected)">{{item.text}}</button></li>
             </ul>
         </div>
         <div id="main">
