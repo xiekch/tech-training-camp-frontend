@@ -336,5 +336,6 @@ header h1 {
   border: 1px solid gray;
   box-sizing: border-box;
   margin: 10px;
+  overflow: scroll;
 }
 </style>
