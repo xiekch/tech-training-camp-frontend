@@ -50,9 +50,7 @@
 </template>
 
 <script>
-import showdown from "showdown";
-
-const converter = new showdown.Converter();
+import marked from "marked";
 
 export default {
   name: "App",
@@ -143,7 +141,7 @@ export default {
   },
   computed: {
     html: function () {
-      return converter.makeHtml(this.markdown);
+      return marked(this.markdown);
     },
   },
   methods: {
@@ -176,6 +174,7 @@ export default {
         textarea.setSelectionRange(begin + range[0], end + range[0]);
         this.markdown = textarea.value;
       }
+      textarea.scrollTop = textarea.selectionEnd;
     },
     downloadMD: function () {
       const a = document.createElement("a");
